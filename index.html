@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Grok : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Grok</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/GrokImageCompression/GrokImage">View on GitHub</a>
+
+          <h1 id="project_title">Grok</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/GrokImageCompression/GrokImage/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/GrokImageCompression/GrokImage/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="background" class="anchor" href="#background" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Background</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/JPEG_2000">JPEG 2000</a> was introduced to fix some of the deficiencies of JPEG : it has superior image quality at high compression ratios, supports gigapixel images and bi-level images such as text, and it handles both lossy and lossless compression in a single bit stream. It also introduces new features such as:</p>
+
+<ul>
+<li>
+<strong>Resolution Scalability</strong> lower resolution versions of an image can be easily extracted</li>
+<li>
+<strong>Error Resilience</strong> an error in one part of the image it limited to that region alone</li>
+</ul>
+
+<p>JPEG 2000 has become the compression ratio of choice in the following fields:</p>
+
+<ul>
+<li>
+<strong>Digital Cinema</strong> Every movie you watch at the cinema has been compressed using JPEG 2000</li>
+<li>
+<strong>Medical Imaging</strong> Hospitals compress CT or MRI images using lossless JPEG 2000 because no image information is lost when doctors view these images for diagnostic purposes</li>
+<li>
+<strong>Geospatial Analysis</strong> Large satellite images compressed with JPEG 2000 can be later decompressed and viewed at varying resolutions to speed analysis
+JPEG 2000 is also gaining ground in the digital archive world, used to compress high-resolution digital scans of paintings and manuscripts.</li>
+</ul>
+
+<h3>
+<a id="problem" class="anchor" href="#problem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problem</h3>
+
+<p>JPEG 2000 is much more computationally intense than JPEG, requiring up to 10 times more computational power.
+Images are also getting larger, with the introduction of Ultra High Definition formats such as 4K, and High Dynamic Range imaging. A 4K video frame is 4 times larger than a 2K frame, where 2K is the current standard for cinema-quality video.<br>
+*<em>Software encoders and decoders can't process pixels fast enough *</em>
+Custom hardware such as <a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a> or <a href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit">ASIC</a> are much more expensive and much less flexible than a software solution.</p>
+
+<h3>
+<a id="solution" class="anchor" href="#solution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Solution</h3>
+
+<p>Driven by the gaming industry, off-the-shelf video cards have become extremely powerful, with many times the computing power of a CPU, and they are relatively inexpensive. Due to intense competition, their power increases every year or two.  These cards can be programmed to perform image compression, matching the power of an FPGA or ASIC at a much lower cost, with much greater flexibility. </p>
+
+<h3>
+<a id="grok" class="anchor" href="#grok" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grok</h3>
+
+<p>Grok develops high speed image compression codecs that run on your video card. Our JPEG 2000 encoder can encode 2K video at around 100 frames per second (on recent video hardware) - many times the speed of state of the art software JPEG 2000 encoders. Encoding speed can also be doubled or quadrupled by installing more video cards (up to 4).</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Grok maintained by <a href="https://github.com/GrokImageCompression">GrokImageCompression</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
